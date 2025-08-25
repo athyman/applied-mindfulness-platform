@@ -1,0 +1,71 @@
+{
+  "short_name": "Applied Mindfulness",
+  "name": "Applied Mindfulness Platform",
+  "description": "Transform your mindfulness practice with AI-powered coaching and community support",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#059669",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "categories": ["health", "lifestyle", "wellness"],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Dashboard view"
+    },
+    {
+      "src": "screenshot2.png", 
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile course view"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Meditation",
+      "short_name": "Meditate",
+      "description": "Quick access to meditation sessions",
+      "url": "/courses?quick=meditation",
+      "icons": [{ "src": "meditation-icon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "AI Coach",
+      "short_name": "Coach",
+      "description": "Chat with your AI mindfulness coach",
+      "url": "/coach",
+      "icons": [{ "src": "coach-icon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Community",
+      "short_name": "Groups",
+      "description": "Connect with your mindfulness community",
+      "url": "/community",
+      "icons": [{ "src": "community-icon.png", "sizes": "96x96" }]
+    }
+  ],
+  "prefer_related_applications": false
+}
