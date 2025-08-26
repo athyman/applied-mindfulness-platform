@@ -6,9 +6,7 @@ import { ReactQueryDevtools } from 'react-query/devtools';
 import { Toaster } from 'react-hot-toast';
 
 import App from './App';
-import { AuthProvider } from './contexts/AuthContext';
-import { PWAProvider } from './contexts/PWAContext';
-import './styles/index.css';
+import './index.css';
 
 // Create a client
 const queryClient = new QueryClient({
@@ -34,31 +32,27 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
-        <PWAProvider>
-          <AuthProvider>
-            <App />
-            <Toaster
-              position="top-right"
-              toastOptions={{
-                duration: 4000,
-                style: {
-                  background: '#363636',
-                  color: '#fff',
-                },
-                success: {
-                  style: {
-                    background: '#059669',
-                  },
-                },
-                error: {
-                  style: {
-                    background: '#DC2626',
-                  },
-                },
-              }}
-            />
-          </AuthProvider>
-        </PWAProvider>
+        <App />
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 4000,
+            style: {
+              background: '#363636',
+              color: '#fff',
+            },
+            success: {
+              style: {
+                background: '#059669',
+              },
+            },
+            error: {
+              style: {
+                background: '#DC2626',
+              },
+            },
+          }}
+        />
         {process.env.NODE_ENV === 'development' && (
           <ReactQueryDevtools initialIsOpen={false} />
         )}
